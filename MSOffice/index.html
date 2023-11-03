@@ -1,24 +1,28 @@
-<!DOCTYPE html>
-<html lang="ko">
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <html>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>MSOffice</title>
-</head>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>MSOFFICE</title>
+    </head>
 
-<body>
-  <div id="gameBoard"></div>
+    <body class='mainPage'>
+      난이도를 선택하세요.
+      <div class='frame'>
+        <button diff='easy' class='selectDifficulty' id='btnMineEasy'>쉬움</button>
+        <button diff='normal' class='selectDifficulty' id='btnMineNormal'>보통</button>
+        <button diff='hard' class='selectDifficulty' id='btnMineHard'>어려움</button>
+      </div>
+      남은 폭탄 수 : <b id="mineRemain"></b>
+      <div class='mineAppear' id="mineIn"></div>
+    </body>
+    <script>
+      "main.js"
 
-  <div class="gameSet">
-    <input type="number" id="row" placeholder="가로">
-    <input type="number" id="col" placeholder="세로">
-    <input type="number" id="mineNum" placeholder="지뢰 개수">
-    <button id="startBtn">게임 시작</button>
-  </div>
+    </script>
 
-  <script src="program.js"></script>
-</body>
+  </html>
 
 </html>
